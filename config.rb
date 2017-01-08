@@ -42,3 +42,10 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+data.songs.each_key do |song_title|
+  proxy "/songs/#{song_title.parameterize}.html",
+    "/song.html",
+    locals: { song_title: song_title },
+    ignore: true
+end

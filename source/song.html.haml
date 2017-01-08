@@ -1,0 +1,40 @@
+:ruby
+  song = data.songs[song_title]
+  current_page.data.title = "#{song_title} (Key of #{song[:music_key]})"
+
+%nav
+  = link_to "Back", '/'
+
+%article
+  %h1
+    = current_page.data.title
+
+  %table
+    - song.lyrics.each do |verse|
+      :ruby
+        verse_title = verse.is_a?(Hash) ? verse.keys[0] : "Repeat #{verse}"
+        verse_lyrics = verse.is_a?(Hash) ? verse.values[0] : '&hellip;'
+        verse_chords = song.chords[verse_title] || '&hellip;'
+        verse_lyrics_lines = verse_lyrics.split("\n")
+        verse_chords_lines = verse_chords.split("\n")
+
+      - verse_lyrics_lines.each.with_index do |lyrics_line, i|
+        :ruby
+          tr_classes = []
+
+          if i == verse_lyrics_lines.size - 1
+            tr_classes << 'verse-lyrics-line--last'
+          end
+
+          tr_classes << 'verse-lyrics-line--space' if lyrics_line.blank?
+
+        %tr{ class: tr_classes }
+          - if i == 0
+            %th{rowspan: verse_lyrics_lines.size}
+              = verse_title
+
+          %td
+            = lyrics_line
+
+          %td
+            = verse_chords_lines[i]
