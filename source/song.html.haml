@@ -12,11 +12,16 @@
   %table
     - song.lyrics.each do |verse|
       :ruby
+        verse_repeated = !verse.is_a?(Hash)
         verse_title = verse.is_a?(Hash) ? verse.keys[0] : "Repeat #{verse}"
         verse_lyrics = verse.is_a?(Hash) ? verse.values[0] : '&hellip;'
         verse_chords = song.chords[verse_title] || '&hellip;'
         verse_lyrics_lines = verse_lyrics.split("\n")
         verse_chords_lines = verse_chords.split("\n")
+
+      %tr
+        %th{colspan: 2}
+          = verse_title
 
       - verse_lyrics_lines.each.with_index do |lyrics_line, i|
         :ruby
@@ -28,13 +33,10 @@
 
           tr_classes << 'verse-lyrics-line--space' if lyrics_line.blank?
 
-        %tr{ class: tr_classes }
-          - if i == 0
-            %th{rowspan: verse_lyrics_lines.size}
-              = verse_title
+        - unless verse_repeated
+          %tr{ class: tr_classes }
+            %td
+              = lyrics_line
 
-          %td
-            = lyrics_line
-
-          %td
-            = verse_chords_lines[i]
+            %td.chords
+              = verse_chords_lines[i]

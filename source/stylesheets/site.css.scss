@@ -9,6 +9,7 @@ th {
   vertical-align: top;
   padding-right: 1rem;
   padding-bottom: 1rem;
+  text-align: left;
 }
 
 td {
@@ -19,4 +20,9 @@ tr.verse-lyrics-line--last, tr.verse-lyrics-line--space {
   td {
     padding-bottom: 1rem;
   }
+}
+
+.chords {
+  white-space: nowrap;
+  vertical-align: top;
 }
