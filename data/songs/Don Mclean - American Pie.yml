@@ -1,7 +1,7 @@
 music_key: G
 
 chords:
-  Verse (Slow): |
+  Verse (First): |
     I V vi-
     ii- IV-
     vi- V---
@@ -10,8 +10,27 @@ chords:
     ii- IV-
     vi- IV- V---
 
-    vi- ii- (Last verse: vi- V-)
-    vi- ii- (Last verse: vi- V-)
+    vi- ii-
+    vi- ii-
+    IV I ii-
+    IV- V-
+
+    I V vi-
+    IV- V-
+    I V vi-
+    IV- V- I---
+
+  Verse (Last): |
+    I V vi-
+    ii- IV-
+    vi- V---
+
+    I V vi-
+    ii- IV-
+    vi- IV- V---
+
+    vi- V-
+    vi- V-
     IV I ii-
     IV- V-
 
@@ -24,8 +43,14 @@ chords:
     I- IV- I- V-
     I- IV- I- V-
     I- IV- I- V-
-    vi--- II7--- (Last chorus: end with IV- V- I IV I---)
+    vi--- II7---
     vi--- V--- ----
+
+  Chorus (Last): |
+    I- IV- I- V-
+    I- IV- I- V-
+    I- IV- I- V-
+    IV- V- I IV I---
 
   Verse (Fast): |
     I- ii-
@@ -47,7 +72,7 @@ chords:
     IV- V- I IV I V
 
 lyrics:
-  - Verse (Slow): |
+  - Verse (First): |
       A long, long time ago
       I can still remember
       how that music used to make me smile.
@@ -161,7 +186,7 @@ lyrics:
 
   - Chorus
 
-  - Verse (Slow): |
+  - Verse (Last): |
       I met a girl who sang the blues
       so I asked her for some happy news
       but she just smiled and turned away.
@@ -182,3 +207,9 @@ lyrics:
       And they were singing
 
   - Chorus
+
+  - Chorus (Last): |
+      So bye-bye, Miss American Pie.
+      Drove my Chevy to the levee but the levee was dry,
+      them good ole boys were drinkin' whiskey and Rye,
+      singing this'll be the day that I die.
