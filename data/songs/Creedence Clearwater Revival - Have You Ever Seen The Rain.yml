@@ -1,0 +1,61 @@
+music_key: C
+
+chords:
+  Intro: |
+    vi--- VI---
+    I--- V---
+    I--- V---
+
+  Verse: |
+    I--- ----
+    I--- ----
+    V--- ----
+    I--- ----
+
+  Chorus: |
+    IV--- V--- I-
+    vi7/vii- vi- vi7/V-
+    IV--- V--- I-
+    vi7/vii- vi- vi7/V-
+    IV--- V--- I--- ----
+
+lyrics:
+  - Intro: |
+      ...
+      ...
+      ...
+
+  - Verse: |
+      Someone told me long ago
+      There's a calm before the storm,
+      I know; it's been coming
+      for some time.
+
+  - Verse: |
+      When it's over, so they say
+      It'll rain a sunny day,
+      I know; shining down
+      like water.
+
+  - Chorus : |
+      I want to know, have you
+      ever seen the rain?
+      I want to know, have you
+      ever seen the rain
+      Coming down on a sunny day?
+
+  - Verse: |
+      Yesterday, and days before,
+      Sun is cold and rain is hard,
+      I know; been that way
+      for all my time.
+
+  - Verse: |
+      'Til forever, on it goes
+      Through the circle, fast and slow,
+      I know; it can't stop,
+      I wonder.
+
+  - Chorus
+
+  - Chorus
