@@ -1,0 +1,55 @@
+music_key: Bb
+
+chords:
+  Verse: |
+    ii- IV- I- V-
+    ii- IV- I- V-
+    ii- IV- I- V-
+    ii- IV- I- V-
+
+  Refrain: |
+    IV--- I- V-
+    IV--- I- V-
+    IV--- I- V-
+    ii--- ----
+
+  Chorus: |
+    I- V- ii----
+    I- V- ii----
+    I- V- ii----
+    IV--- ----
+
+lyrics:
+  - Verse: |
+      Dancin where the stars go blue
+      Dancin where the evening fell
+      Dancin in your wooden shoes
+      In a wedding gown
+
+  - Verse: |
+      Dancin out on 7th street
+      Dancin through the underground
+      Dancin little marionette
+      Are you happy now?
+
+  - Refrain: |
+      Where do you go when you're lonely?
+      Where do you go  when you're blue?
+      Where do you go when you're lonely?
+      I'll follow you
+
+  - Chorus: |
+      When the stars go blue
+      When the stars go blue
+      When the stars go blue
+      When the stars go blue
+
+  - Verse: |
+      Laughing with your pretty mouth
+      Laughing with your broken eyes
+      Laughing with your lover's tongue
+      In a lullabye
+
+  - Refrain
+
+  - Chorus
