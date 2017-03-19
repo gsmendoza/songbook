@@ -1,0 +1,53 @@
+music_key: D
+
+chords:
+  Instrumental: |
+    I--- I7--
+    IV--- iv---
+    I--- V---
+    I I7 IV iv I- V7-
+
+  Verse: |
+    I--- I7--
+    IV--- iv---
+    I--- V---
+    I I7 IV iv I- V7-
+
+  Verse (last): |
+    I--- I7--
+    IV--- iv---
+    I--- V---
+    I I7 IV iv I- I7-
+
+lyrics:
+  - Instrumental: |
+      ...
+      ...
+      ...
+      ...
+
+  - Verse: |
+      You said you hurtin', you almost lost your mind
+      Now the man you love he hurt you all the time
+      But when things go wrong, go wrong with you
+      It hurts me too
+
+  - Verse: |
+      You love him more, when you should love him less
+      Why pick up behind him and take his mess
+      But when things go wrong, wrong with you
+      It hurts me too
+
+  - Verse: |
+      He love another woman, yes I love you
+      But you love him and stick to him like glue
+      When things go wrong, go wrong with you
+      It hurts me too
+
+  - Instrumental
+
+  - Verse (last): |
+      Now he'd better leave you, or you better put him down
+      No, I won't stand to see you pushed around
+      But when things go wrong, go wrong with you
+      It hurts me too
