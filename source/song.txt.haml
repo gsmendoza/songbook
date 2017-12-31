@@ -1,0 +1,38 @@
+:ruby
+  song = data.songs[song_title]
+  current_page.data.title = "#{song_title} (Key of #{song[:music_key]})"
+
+  max_lyrics_line_length = 
+    song
+      .lyrics
+      .select { |verse| verse.is_a?(Hash) }
+      .flat_map(&:values)
+      .flat_map { |value| value.split("\n") }
+      .map(&:length)
+      .max
+
+= current_page.data.title
+
+- song.lyrics.each do |verse|
+  :ruby
+    verse_repeated = !verse.is_a?(Hash)
+    verse_title = verse.is_a?(Hash) ? verse.keys[0] : "Repeat #{verse}"
+    verse_lyrics = verse.is_a?(Hash) ? verse.values[0] : '...'
+    verse_chords = song.chords[verse_title] || '...'
+    verse_lyrics_lines = verse_lyrics.split("\n")
+    verse_chords_lines = verse_chords.split("\n")
+
+  = "\n#{verse_title}\n"
+
+  - verse_lyrics_lines.each.with_index do |lyrics_line, i|
+    :ruby
+      tr_classes = []
+
+      if i == verse_lyrics_lines.size - 1
+        tr_classes << 'verse-lyrics-line--last'
+      end
+
+      tr_classes << 'verse-lyrics-line--space' if lyrics_line.blank?
+
+    - unless verse_repeated
+      = "#{lyrics_line.ljust(max_lyrics_line_length)} | #{verse_chords_lines[i]}"

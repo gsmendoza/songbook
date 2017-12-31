@@ -44,8 +44,8 @@ configure :build do
 end
 
 data.songs.each_key do |song_title|
-  proxy "/songs/#{song_title.parameterize}.html",
-    "/song.html",
+  proxy "/#{song_title.parameterize}.txt",
+    "/song.txt",
     locals: { song_title: song_title },
     ignore: true
 end
