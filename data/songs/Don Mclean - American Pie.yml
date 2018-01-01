@@ -2,74 +2,74 @@ music_key: G
 
 chords:
   Verse (First): |
-    I V vi-
-    ii- IV-
-    vi- V---
+    <G> <D> <Em>-
+    <Am>- <C>-
+    <Em>- <D>---
 
-    I V vi-
-    ii- IV-
-    vi- IV- V---
+    <G> <D> <Em>-
+    <Am>- <C>-
+    <Em>- <C>- <D>---
 
-    vi- ii-
-    vi- ii-
-    IV I ii-
-    IV- V-
+    <Em>- <Am>-
+    <Em>- <Am>-
+    <C> <G> <Am>-
+    <C>- <D>-
 
-    I V vi-
-    IV- V-
-    I V vi-
-    IV- V- I---
+    <G> <D> <Em>-
+    <C>- <D>-
+    <G> <D> <Em>-
+    <C>- <D>- <G>---
 
   Verse (Last): |
-    I V vi-
-    ii- IV-
-    vi- V---
+    <G> <D> <Em>-
+    <Am>- <C>-
+    <Em>- <D>---
 
-    I V vi-
-    ii- IV-
-    vi- IV- V---
+    <G> <D> <Em>-
+    <Am>- <C>-
+    <Em>- <C>- <D>---
 
-    vi- V-
-    vi- V-
-    IV I ii-
-    IV- V-
+    <Em>- <D>-
+    <Em>- <D>-
+    <C> <G> <Am>-
+    <C>- <D>-
 
-    I V vi-
-    IV- V-
-    I V vi-
-    IV- V- I---
+    <G> <D> <Em>-
+    <C>- <D>-
+    <G> <D> <Em>-
+    <C>- <D>- <G>---
 
   Chorus: |
-    I- IV- I- V-
-    I- IV- I- V-
-    I- IV- I- V-
-    vi--- II7---
-    vi--- V--- ----
+    <G>- <C>- <G>- <D>-
+    <G>- <C>- <G>- <D>-
+    <G>- <C>- <G>- <D>-
+    <Em>--- <A7>---
+    <Em>--- <D>--- ----
 
   Chorus (Last): |
-    I- IV- I- V-
-    I- IV- I- V-
-    I- IV- I- V-
-    IV- V- I IV I---
+    <G>- <C>- <G>- <D>-
+    <G>- <C>- <G>- <D>-
+    <G>- <C>- <G>- <D>-
+    <C>- <D>- <G> <C> <G>---
 
   Verse (Fast): |
-    I- ii-
-    IV- ii-
-    vi- V---
+    <G>- <Am>-
+    <C>- <Am>-
+    <Em>- <D>---
 
-    I V vi-
-    ii- IV-
-    vi- II7- V---
+    <G> <D> <Em>-
+    <Am>- <C>-
+    <Em>- <A7>- <D>---
 
-    vi- V-
-    vi- V-
-    IV I II7-
-    IV- V7-
+    <Em>- <D>-
+    <Em>- <D>-
+    <C> <G> <A7>-
+    <C>- <D7>-
 
-    I V vi-
-    ii- IV-
-    I V vi-
-    IV- V- I IV I V
+    <G> <D> <Em>-
+    <Am>- <C>-
+    <G> <D> <Em>-
+    <C>- <D>- <G> <C> <G> <D>
 
 lyrics:
   - Verse (First): |
