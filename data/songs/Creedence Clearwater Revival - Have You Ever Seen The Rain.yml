@@ -2,22 +2,22 @@ music_key: C
 
 chords:
   Intro: |
-    vi--- VI---
-    I--- V---
-    I--- V---
+    <Am>--- <F>---
+    <C>--- <G>---
+    <C>--- <G>---
 
   Verse: |
-    I--- ----
-    I--- ----
-    V--- ----
-    I--- ----
+    <C>--- ----
+    <C>--- ----
+    <G>--- ----
+    <C>--- ----
 
   Chorus: |
-    IV--- V--- I-
-    vi7/vii- vi- vi7/V-
-    IV--- V--- I-
-    vi7/vii- vi- vi7/V-
-    IV--- V--- I--- ----
+    <F>--- <G>---
+    <C>- <Am7/B>- <Am>- <Am7/G>-
+    <F>--- <G>---
+    <C>- <Am7/B>- <Am>- <Am7/G>-
+    <F>--- <G>--- <C>--- ----
 
 lyrics:
   - Intro: |
@@ -38,10 +38,10 @@ lyrics:
       like water.
 
   - Chorus : |
-      I want to know, have you
-      ever seen the rain?
-      I want to know, have you
-      ever seen the rain
+      I want to know
+      Have you ever seen the rain?
+      I want to know
+      Have you ever seen the rain
       Coming down on a sunny day?
 
   - Verse: |
