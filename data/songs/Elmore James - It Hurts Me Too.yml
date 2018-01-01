@@ -2,22 +2,22 @@ music_key: D
 
 chords:
   Instrumental: |
-    I--- I7--
-    IV--- iv---
-    I--- V---
-    I I7 IV iv I- V7-
+    <D>--- <D7>---
+    <G>--- <Gm>---
+    <D>--- <A>---
+    <D> <D7> <G> <Gm> <D>- <A7>-
 
   Verse: |
-    I--- I7--
-    IV--- iv---
-    I--- V---
-    I I7 IV iv I- V7-
+    <D>--- <D7>---
+    <G>--- <Gm>---
+    <D>--- <A>---
+    <D> <D7> <G> <Gm> <D>- <A7>-
 
   Verse (last): |
-    I--- I7--
-    IV--- iv---
-    I--- V---
-    I I7 IV iv I- I7-
+    <D>--- <D7>---
+    <G>--- <Gm>---
+    <D>--- <A>---
+    <D> <D7> <G> <Gm> <D>- <A7>-
 
 lyrics:
   - Instrumental: |

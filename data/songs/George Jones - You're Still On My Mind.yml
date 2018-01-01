@@ -2,13 +2,13 @@ music_key: A
 
 chords:
   Instrumental: |
-    V--- V- I---
+    <E>--- <E>- <A>---
 
   Verse: |
-    I--- IV---
-    V--- I---
-    I--- IV---
-    V--- V- I---
+    <A>--- <D>---
+    <E>--- <A>---
+    <A>--- <D>---
+    <E>--- <E>- <A>---
 
 lyrics:
   - Instrumental: |
