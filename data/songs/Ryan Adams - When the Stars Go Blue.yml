@@ -2,24 +2,27 @@ music_key: Bb
 
 chords:
   Verse: |
-    ii- IV- I- V-
-    ii- IV- I- V-
-    ii- IV- I- V-
-    ii- IV- I- V-
+    <Am>- <C>- <G>- <D>-
+    <Am>- <C>- <G>- <D>-
+    <Am>- <C>- <G>- <D>-
+    <Am>- <C>- <G>- <D>-
 
   Refrain: |
-    IV--- I- V-
-    IV--- I- V-
-    IV--- I- V-
-    ii--- ----
+    <C>--- <G>- <D>-
+    <C>--- <G>- <D>-
+    <C>--- <G>- <D>-
+    <Am>--- ----
 
   Chorus: |
-    I- V- ii----
-    I- V- ii----
-    I- V- ii----
-    IV--- ----
+    <G>- <D>- <Am>----
+    <G>- <D>- <Am>----
+    <G>- <D>- <Am>----
+    <C>--- ----
 
 lyrics:
+  - Instructions: |
+      Capo on 3rd fret
+
   - Verse: |
       Dancin where the stars go blue
       Dancin where the evening fell
@@ -34,7 +37,7 @@ lyrics:
 
   - Refrain: |
       Where do you go when you're lonely?
-      Where do you go  when you're blue?
+      Where do you go when you're blue?
       Where do you go when you're lonely?
       I'll follow you
 
