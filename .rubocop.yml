@@ -1,2 +1,8 @@
+Metrics/BlockLength:
+  Exclude:
+    - songbook.gemspec
+    - spec/**/*_spec.rb
+
 Style/Documentation:
   Enabled: false
+
