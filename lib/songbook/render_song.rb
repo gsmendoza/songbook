@@ -1,17 +1,11 @@
 # frozen_string_literal: true
 
-require 'terminal-table'
+require 'tty-table'
 
 module Songbook
   class RenderSong
-    TABLE_STYLE = {
-      width: 80,
-      border_x: '',
-      border_y: '',
-      border_i: '',
-      border_top: false,
-      border_bottom: false
-    }.freeze
+    SEPARATOR = [nil, nil].freeze
+    TABLE_WIDTH = 80
 
     attr_reader :song
 
@@ -20,31 +14,41 @@ module Songbook
     end
 
     def call
-      result = <<~RESULT
-         #{song.title}
-         #{song.details}
+      <<~RESULT
+        #{song.title}
+        #{song.details}
         #{verses_table}
       RESULT
-
-      result.chomp
     end
 
     private
 
     def verses_table
-      Terminal::Table.new do |t|
-        t.style = TABLE_STYLE
-
+      table = TTY::Table.new do |t|
         song.verses.each do |verse|
-          t << [verse.title]
+          t << [verse.title, nil]
 
           verse.lines.each do |line|
             t << [line.lyrics, line.chords]
           end
 
-          t << :separator
+          t << SEPARATOR
         end
       end
+
+      table.render(:basic, table_settings)
+    end
+
+    def table_settings
+      { column_widths: [lyrics_column_width, nil], multiline: true }
+    end
+
+    def lyrics_column_width
+      TABLE_WIDTH - chords_column_width - 1
+    end
+
+    def chords_column_width
+      song.verses.flat_map(&:lines).flat_map(&:chords).map(&:length).max
     end
   end
 end
