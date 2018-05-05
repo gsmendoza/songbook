@@ -15,11 +15,13 @@ module Songbook
     end
 
     def call
-      <<~RESULT
+      result = <<~RESULT
         #{song.title}
         #{song.details}
         #{verses_table}
       RESULT
+
+      result.split("\n").map(&:rstrip).join("\n")
     end
 
     private

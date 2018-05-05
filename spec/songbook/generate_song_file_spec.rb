@@ -22,8 +22,7 @@ RSpec.describe Songbook::GenerateSongFile do
     it 'generates a song file for the song data YAML file' do
       service.call
 
-      expect(File.read(output_path).split("\n").map(&:rstrip).join("\n"))
-        .to eq(expected_output)
+      expect(File.read(output_path)).to eq(expected_output)
     end
   end
 end
