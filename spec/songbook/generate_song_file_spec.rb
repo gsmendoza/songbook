@@ -184,6 +184,11 @@ RSpec.describe Songbook::GenerateSongFile do
       File.open(input_path, 'w') { |file| file.write(input) }
     end
 
+    after do
+      File.delete(input_path)
+      File.delete(output_path)
+    end
+
     it 'generates a song file for the song data YAML file' do
       service.call
 
