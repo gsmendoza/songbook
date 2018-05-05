@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'songbook/generate_song_files'
+
+input_path = ARGV.first || '.'
+output_path = ARGV.last || input_path
+
+service = Songbook::GenerateSongFiles.new(
+  input_path: input_path, output_path: output_path, verbose: true
+)
+
+service.call
