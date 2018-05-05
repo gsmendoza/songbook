@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -45,7 +47,7 @@ end
 
 data.songs.each_key do |song_title|
   proxy "/#{song_title.parameterize}.txt",
-    "/song.txt",
-    locals: { song_title: song_title },
-    ignore: true
+        '/song.txt',
+        locals: { song_title: song_title },
+        ignore: true
 end
