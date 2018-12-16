@@ -3,5 +3,11 @@
 require 'songbook/version'
 
 module Songbook
-  # Your code goes here...
+  def self.select_input_path(path)
+    path || '.'
+  end
+
+  def self.select_output_path(input_path:, output_path:)
+    output_path || input_path
+  end
 end
