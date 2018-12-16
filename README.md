@@ -1,8 +1,10 @@
 # Songbook
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/songbook`. To experiment with that code, run `bin/console` for an interactive prompt.
+Songbook is an application I use to generate chord tablatures i.e. tabs that include only chords and lyrics.
 
-TODO: Delete this and the text above, and describe your gem
+Unlike traditional tabs, the tabs that the app generates have their chords placed to the right of the lyrics. This makes it easy to see the chord progressions of a song.
+
+For samples of the YAML song templates and the tabs that were generated from them, please see https://github.com/gsmendoza/songs.
 
 ## Installation
 
@@ -22,7 +24,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+* `songbook bob-marley-three-little-birds.yml bob-marley-three-little-birds.txt`
+* `songbook . /tmp/songbook` - Generate tabs for all of the YAML files in the present directory and save them in `/tmp/songbook`. Creates `/tmp/songbook` if it does not exist.
+* `songbook /home/bob-marley-three-little-birds.yml` - Same as `/home/songbook bob-marley-three-little-birds.yml /home/bob-marley-three-little-birds.txt`
+* `songbook` - Same as `songbook . .`
+
+**WARNING:** I haven't made any attempt to make a proper implementation of the app's CLI. If for some reason, you decide to become the _second_ user of this app, and the CLI annoys you, let me know :)
 
 ## Development
 
