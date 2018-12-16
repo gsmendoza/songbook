@@ -16,7 +16,7 @@ module Songbook
 
     def call
       result = <<~RESULT
-        #{song.title}
+        #{song.title}\n
         #{song.details}
         #{verses_table}
       RESULT
@@ -30,7 +30,7 @@ module Songbook
     def verses_table
       table = TTY::Table.new do |t|
         song.verses.each do |verse|
-          t << [verse.title, nil]
+          t << ["[#{verse.title}]", nil]
 
           verse.lines.each do |line|
             t << [line.lyrics, line.chords]
