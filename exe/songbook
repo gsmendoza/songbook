@@ -1,14 +1,27 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require 'pathname'
 require 'songbook'
 require 'songbook/generate_song_files'
 
 input_path = Songbook.select_input_path(ARGV.first)
-output_path = Songbook.select_output_path(input_path: input_path, output_path: ARGV.last)
+output_path = Songbook.select_output_path(input_path: input_path, output_path: ARGV.drop(1).last)
 
-service = Songbook::GenerateSongFiles.new(
-  input_path: input_path, output_path: output_path, verbose: true
-)
+input_pathname = Pathname.new(input_path)
+output_pathname = Pathname.new(output_path)
+
+service =
+  if input_pathname.file?
+    Songbook::GenerateSongFile.new(
+      input_path: input_path, output_path: output_path, verbose: true
+    )
+  else
+    output_pathname.mkpath
+
+    Songbook::GenerateSongFiles.new(
+      input_path: input_path, output_path: output_path, verbose: true
+    )
+  end
 
 service.call

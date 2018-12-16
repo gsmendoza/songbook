@@ -6,26 +6,37 @@ require_relative 'render_song'
 
 module Songbook
   class GenerateSongFile
-    attr_reader :input_path, :output_path
+    attr_reader :input_path, :output_path, :verbose
 
-    def initialize(input_path:, output_path:)
+    def initialize(input_path:, output_path:, verbose: false)
       @input_path = input_path
       @output_path = output_path
+      @verbose = verbose
     end
 
     def call
-      song_data = YAML.load_file(input_path)
+      puts "Generating #{output_path}..." if verbose
 
-      song = Song.new(
+      File.open(output_path, 'w') { |file| file.write(song_text) }
+    end
+
+    private
+
+    def song_text
+      @song_text ||= RenderSong.new(song).call
+    end
+
+    def song
+      @song ||= Song.new(
         title: File.basename(input_path, '.yml'),
         details: song_data['details'],
         chords: song_data['chords'],
         lyrics: song_data['lyrics']
       )
+    end
 
-      song_text = RenderSong.new(song).call
-
-      File.open(output_path, 'w') { |file| file.write(song_text) }
+    def song_data
+      @song_data ||= YAML.load_file(input_path)
     end
   end
 end

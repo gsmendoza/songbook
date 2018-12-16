@@ -20,10 +20,9 @@ module Songbook
 
         service = GenerateSongFile.new(
           input_path: filename,
-          output_path: output_file
+          output_path: output_file,
+          verbose: verbose
         )
-
-        puts "Generating #{output_file}..." if verbose
 
         service.call
       end
