@@ -34,10 +34,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'tty-table', '~> 0.10'
 
-  spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'overcommit', '~> 0.45'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rake', '>= 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.55'
 end
