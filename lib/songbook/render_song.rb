@@ -5,7 +5,6 @@ require 'tty-table'
 module Songbook
   class RenderSong
     SEPARATOR = [nil, nil].freeze
-    TABLE_WIDTH = 80
     LYRICS_CHORDS_SEPARATOR = '   '
 
     attr_reader :song
@@ -54,7 +53,7 @@ module Songbook
 
     def lyrics_column_width
       [
-        TABLE_WIDTH - chords_column_width - LYRICS_CHORDS_SEPARATOR.length,
+        song.table_width - chords_column_width - LYRICS_CHORDS_SEPARATOR.length,
         max_lyrics_column_width
       ].min
     end

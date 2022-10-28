@@ -4,13 +4,16 @@ require_relative 'verse'
 
 module Songbook
   class Song
-    attr_reader :title, :details, :chords, :lyrics
+    TABLE_WIDTH = 80
 
-    def initialize(title:, details:, chords:, lyrics:)
+    attr_reader :title, :details, :chords, :lyrics, :table_width
+
+    def initialize(title:, details:, chords:, lyrics:, table_width: nil)
       @title = title
       @details = details
       @chords = chords
       @lyrics = lyrics
+      @table_width = table_width || TABLE_WIDTH
     end
 
     def verses

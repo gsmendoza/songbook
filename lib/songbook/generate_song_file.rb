@@ -27,11 +27,14 @@ module Songbook
     end
 
     def song
+      table_width = song_data['config']['table_width'] if song_data['config']
+
       @song ||= Song.new(
         title: File.basename(input_path, '.yml'),
         details: song_data['details'],
         chords: song_data['chords'],
-        lyrics: song_data['lyrics']
+        lyrics: song_data['lyrics'],
+        table_width: table_width
       )
     end
 
