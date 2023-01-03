@@ -32,7 +32,7 @@ module Songbook
           t << ["[#{verse.title}]", nil]
 
           verse.lines.each do |line|
-            t << [line.lyrics, line.chords]
+            t << [line.chords, line.lyrics]
           end
 
           t << SEPARATOR
@@ -48,7 +48,7 @@ module Songbook
     # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
 
     def table_settings
-      { column_widths: [lyrics_column_width, nil], multiline: true }
+      { column_widths: [chords_column_width, lyrics_column_width], multiline: true }
     end
 
     def lyrics_column_width
