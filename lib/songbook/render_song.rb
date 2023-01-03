@@ -29,7 +29,7 @@ module Songbook
     def verses_table
       table = TTY::Table.new do |t|
         song.verses.each do |verse|
-          t << ["[#{verse.title}]", nil]
+          t << [verse.formatted_title, nil]
 
           verse.lines.each do |line|
             t << [line.chords, line.lyrics]
@@ -63,7 +63,10 @@ module Songbook
     end
 
     def chords_column_width
-      song.verses.flat_map(&:lines).flat_map(&:chords).map(&:length).max
+      chord_column_texts =
+        song.verses.flat_map(&:lines).flat_map(&:chords) + song.verses.map(&:formatted_title)
+
+      chord_column_texts.map(&:length).max
     end
   end
 end

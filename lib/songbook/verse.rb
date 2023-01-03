@@ -27,6 +27,10 @@ module Songbook
     end
     # rubocop:enable Metrics/AbcSize
 
+    def formatted_title
+      "[#{title}]"
+    end
+
     private
 
     def lyric_lines
