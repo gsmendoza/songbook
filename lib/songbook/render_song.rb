@@ -48,17 +48,14 @@ module Songbook
     # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
 
     def table_settings
-      { column_widths: [chords_column_width, lyrics_column_width], multiline: true }
+      { resize: true, width: table_width }
+    end
+
+    def table_width
+      chords_column_width + LYRICS_CHORDS_SEPARATOR.length + lyrics_column_width
     end
 
     def lyrics_column_width
-      [
-        song.table_width - chords_column_width - LYRICS_CHORDS_SEPARATOR.length,
-        max_lyrics_column_width
-      ].min
-    end
-
-    def max_lyrics_column_width
       song.verses.flat_map(&:lines).flat_map(&:lyrics).map(&:length).max
     end
 
