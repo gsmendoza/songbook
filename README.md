@@ -4,7 +4,7 @@ Songbook is an application I use to generate chord tablatures i.e. tabs that inc
 
 Unlike traditional tabs, the tabs that the app generates have their chords placed to the right of the lyrics. This makes it easy to see the chord progressions of a song.
 
-For samples of the YAML song templates and the tabs that were generated from them, please see https://guitarsongs.club/user/728567.
+For samples of the YAML song templates and the tabs that were generated from them, please see https://www.dropbox.com/sh/mf24yjlqzop2pds/AACJcksvXWFeAlqNEivFORNca?dl=0 and https://guitarsongs.club/user/728567.
 
 ## Installation
 
